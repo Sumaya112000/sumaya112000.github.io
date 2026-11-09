@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Your Name" />
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">YN.</a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Your Name</h1>
+        <h2>I build clean and useful digital experiences.</h2>
+        <p class="hero-copy">
+          I’m an aspiring developer focused on creating fast, accessible,
+          and user-friendly websites.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View my work</a>
+          <a class="button secondary" href="#contact">Contact me</a>
+        </div>
+
+        <div class="social-links" aria-label="Social links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Your Name"</span>,
+  skills: [
+    <span class="code-green">"HTML"</span>,
+    <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>
+  ],
+  passion: <span class="code-green">"Building for the web"</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="section-label">About</p>
+          <h2 class="section-title">A little about me</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I enjoy turning ideas into simple, functional websites. I’m
+            currently improving my front-end development skills and building
+            projects that solve real problems.
+          </p>
+          <p>
+            When I’m not coding, I enjoy learning new tools, exploring design,
+            and finding better ways to create useful experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alternate">
+      <div class="container">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Selected work</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h3>Project One</h3>
+            <p>
+              A short description of what the project does, the problem it
+              solves, and what you learned while building it.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Project One live">Live demo ↗</a>
+              <a href="#" aria-label="View Project One source code">Code ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h3>Project Two</h3>
+            <p>
+              Add your strongest work here. Mention the main feature and the
+              technologies you used to build it.
+            </p>
+            <div class="tags">
+              <span>JavaScript</span><span>API</span><span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Project Two live">Live demo ↗</a>
+              <a href="#" aria-label="View Project Two source code">Code ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <h3>Project Three</h3>
+            <p>
+              Use this space for another project, experiment, open-source
+              contribution, or case study.
+            </p>
+            <div class="tags">
+              <span>UI Design</span><span>Git</span><span>Web</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Project Three live">Live demo ↗</a>
+              <a href="#" aria-label="View Project Three source code">Code ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">Tools I work with</h2>
+
+        <div class="skills-grid">
+          <div>
+            <h3>Front end</h3>
+            <p>HTML, CSS, JavaScript, responsive design, accessibility</p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, browser developer tools, Figma</p>
+          </div>
+          <div>
+            <h3>Currently learning</h3>
+            <p>React, TypeScript, Next.js, modern CSS workflows</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <p class="section-label">Contact</p>
+        <h2>Let’s build something useful.</h2>
+        <p>
+          Have a project, opportunity, or question? Send me a message and I’ll
+          get back to you.
+        </p>
+        <a class="button primary" href="mailto:you@example.com">you@example.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Your Name. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
